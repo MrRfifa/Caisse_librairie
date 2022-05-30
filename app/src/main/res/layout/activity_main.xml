@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="120dp"
+        ></TextView>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="120dp"
+                android:columnCount="2"
+                android:rowCount="5">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="225dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/cartable"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Cartable"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger1"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger1"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/regle"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Règle"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger2"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger2"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="238dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/cahier48"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Cahier 48"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger3"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger3"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="238dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/cahier72"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Cahier 72"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger4"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger4"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="237dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/crayon"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Crayon"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger5"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger5"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_row="2"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/feutre"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Feutre"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger6"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger6"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/stylo"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Stylos"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger7"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger7"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="246dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/florissant"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Florissant"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger8"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger8"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gouache"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Gouache"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger9"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger9"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gomme"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Gomme"
+                            android:textColor="@android:color/holo_blue_dark"></TextView>
+
+                        <Button
+                            android:id="@+id/decrease10"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:onClick="decreaseInteger10"
+                            android:text="-" />
+                        <!-- android:onClick="decreaseInteger" -->
+
+
+                        <TextView
+                            android:id="@+id/integer_number10"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:gravity="center"
+                            android:paddingBottom="-15dp"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationX="20dp"
+                            android:translationY="-67dp" />
+
+                        <Button
+                            android:id="@+id/increase10"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:onClick="increaseInteger10"
+                            android:text="+"
+                            android:translationX="120dp"
+                            android:translationY="-130dp"
+                            android:visibility="visible" />
+                        <!-- android:onClick="increaseInteger" -->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="55dp"
+        android:layout_height="1520dp"
+        android:text="->"
+        android:translationX="360dp"
+        android:translationY="0dp"></Button>
+
+
+</RelativeLayout>

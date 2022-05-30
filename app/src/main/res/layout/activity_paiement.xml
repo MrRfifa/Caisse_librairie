@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Paiement"
+    android:background="@drawable/bg"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paiement"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="150dp"
+        ></TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+       >
+
+        <RadioButton
+            android:id="@+id/radioButton_esp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Espèce"
+            android:textSize="25dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton_carte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Carte bancaire"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/montant"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="240dp"
+        android:hint="Montant"
+        android:inputType="numberDecimal"
+        android:visibility="invisible"></EditText>
+
+    <EditText
+        android:id="@+id/num_carte"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="350dp"
+        android:hint="Numéro de la carte"
+        android:inputType="number"
+        android:visibility="invisible"></EditText>
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="670dp"
+        android:text="Finish"></Button>
+
+</RelativeLayout>

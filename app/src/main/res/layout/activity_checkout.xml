@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkout"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Nom">
+
+    </TextView>
+
+    <TextView
+        android:text="Qtt"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:text="PU"
+        android:textSize="25dp"
+        android:translationX="320dp"></TextView>
+
+    <TextView
+        android:id="@+id/nom1"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Cartable">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/qt1"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="50"
+        android:textSize="25dp"
+        android:translationX="320dp"></TextView>
+
+    <TextView
+        android:id="@+id/nom2"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Règle"></TextView>
+
+    <TextView
+        android:id="@+id/qt2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="1.7"
+        android:textSize="25dp"
+        android:translationX="320dp"></TextView>
+
+
+
+    <TextView
+        android:id="@+id/nom3"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Cahier 48"></TextView>
+
+    <TextView
+        android:id="@+id/qt3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:text="2.2"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        android:visibility="visible"
+        tools:visibility="visible"></TextView>
+
+    <TextView
+        android:id="@+id/nom4"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Cahier 72"></TextView>
+
+    <TextView
+        android:id="@+id/qt4"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:text="3.1"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        tools:text="3.1"></TextView>
+
+
+    <TextView
+        android:id="@+id/nom5"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Crayon"></TextView>
+
+    <TextView
+        android:id="@+id/qt5"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="16dp"
+        android:text="0.8"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        tools:text="0.8"></TextView>
+
+
+    <TextView
+        android:id="@+id/nom6"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Feutre"></TextView>
+
+    <TextView
+        android:id="@+id/qt6"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="16dp"
+        android:text="5.5"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        tools:text="5.5"></TextView>
+
+    <TextView
+        android:id="@+id/nom7"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Stylos"></TextView>
+
+    <TextView
+        android:id="@+id/qt7"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="16dp"
+        android:text="2.5"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        tools:text="2.5"></TextView>
+
+
+    <TextView
+        android:id="@+id/nom8"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Florissant"></TextView>
+
+    <TextView
+        android:id="@+id/qt8"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="16dp"
+        android:text="4.8"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        tools:text="4.8"></TextView>
+
+
+    <TextView
+        android:id="@+id/nom9"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Gouache"></TextView>
+
+    <TextView
+        android:id="@+id/qt9"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="16dp"
+        android:text="6.7"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        tools:text="6.7"></TextView>
+
+
+    <TextView
+        android:id="@+id/nom10"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:text="Gomme"></TextView>
+
+    <TextView
+        android:id="@+id/qt10"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="16dp"
+        android:text="1.2"
+        android:textSize="25dp"
+        android:translationX="320dp"
+        tools:text="1.2"></TextView>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="600dp"
+        android:text="Total"
+        android:textSize="25dp"></TextView>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="25dp"
+        android:translationX="200dp"></TextView>
+
+
+    <Button
+        android:id="@+id/payer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="670dp"
+        android:text="Paiement"></Button>
+
+
+
+</RelativeLayout>
