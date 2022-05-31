@@ -7,15 +7,25 @@
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:text="Bienvenue"
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="120dp"
-        ></TextView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 
 
     <HorizontalScrollView
@@ -768,10 +778,10 @@
     <Button
         android:id="@+id/btn1"
         android:layout_width="55dp"
-        android:layout_height="1520dp"
+        android:layout_height="220dp"
         android:text="->"
         android:translationX="360dp"
-        android:translationY="0dp"></Button>
+        android:translationY="200dp"></Button>
 
 
 </RelativeLayout>

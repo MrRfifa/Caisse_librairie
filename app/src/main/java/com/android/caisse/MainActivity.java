@@ -1,7 +1,10 @@
 package com.android.caisse;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,16 +32,32 @@ public class MainActivity extends AppCompatActivity {
     public static final String int8="com.android.caisse.nb8";
     public static final String int9="com.android.caisse.nb9";
     public static final String int10="com.android.caisse.nb10";
+    Toolbar mActionBarToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mActionBarToolbar=findViewById(R.id.toolbar);
+        mActionBarToolbar.setTitle("Bienvenue");
         Button btn=(Button) findViewById(R.id.btn1);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openCheckout();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                if (minteger1==0 && minteger2==0 && minteger3==0 && minteger4==0 && minteger5==0 && minteger6==0 && minteger7==0 && minteger8==0 && minteger9==0 && minteger10==0) {
+                    builder.setCancelable(false);
+                    builder.setTitle("Erreur de choix");
+                    builder.setMessage("Il faut choisir au moins un produit");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                        }
+                    });
+                    builder.show();
+                }
+                else openCheckout();
             }
         });
         Intent intent=getIntent();

@@ -1,7 +1,9 @@
 package com.android.caisse;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,25 +17,92 @@ public class Paiement extends AppCompatActivity {
 
     RadioGroup radioGroup;
     RadioButton radioButton;
-    EditText text1;//=(EditText) findViewById(R.id.montant);
-    EditText text2;//=(EditText) findViewById(R.id.num_carte);
+    EditText text1;
+    EditText text2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paiement);
+        radioGroup=findViewById(R.id.radioGroup);
+        text1= findViewById(R.id.montant);
+        text2= findViewById(R.id.num_carte);
 
 
         Button btn=(Button) findViewById(R.id.retour);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openAccueil();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(Paiement.this);
+                if (text1.getVisibility()==View.INVISIBLE && text2.getVisibility()==View.INVISIBLE ) {
+                    builder.setCancelable(false);
+                    builder.setTitle("Erreur de paiement");
+                    builder.setMessage("Il faut choisir une méthode de paiement");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                        }
+                    });
+                    builder.show();
+                }
+
+                else if ( text2.getText().toString().trim().length()==0 && text1.getVisibility()==View.INVISIBLE ) {
+                    builder.setCancelable(false);
+                    builder.setTitle("Champ vide");
+                    builder.setMessage("Numéro de la carte est vide");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+                    builder.show();
+                }
+                else if ( text1.getText().toString().trim().length()==0 && text2.getVisibility()==View.INVISIBLE )
+                {
+                    builder.setCancelable(false);
+                    builder.setTitle("Champ vide");
+                    builder.setMessage("Montant à payer est vide");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+                    builder.show();
+                }
+                else if ( text2.getText().toString().length()<12 )
+                {
+                    builder.setCancelable(false);
+                    builder.setTitle("Carte invalide");
+                    builder.setMessage("La taille d'un numéro de carte est 12");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    builder.setCancelable(false);
+                    builder.setTitle("Paiement");
+                    builder.setMessage("Paiement effectué avec succées");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            openAccueil();
+                        }
+                    });
+                    builder.show();
+                }
+
+
+
             }
         });
 
-        radioGroup=findViewById(R.id.radioGroup);
-        text1= findViewById(R.id.montant);
-        text2= findViewById(R.id.num_carte);
+
     }
 
     public void onRadioButtonClicked(View view) {

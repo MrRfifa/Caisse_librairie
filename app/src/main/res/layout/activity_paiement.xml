@@ -65,7 +65,8 @@
         android:layout_marginTop="350dp"
         android:hint="Numéro de la carte"
         android:inputType="number"
-        android:visibility="invisible"></EditText>
+        android:visibility="invisible"
+        android:maxLength="12"></EditText>
 
     <Button
         android:id="@+id/retour"
